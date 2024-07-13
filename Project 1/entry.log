@@ -1,0 +1,51 @@
+2024-07-13 02:59:31,380:INFO:This is a test log message.
+2024-07-13 03:00:25,929:INFO:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2024-07-13 03:00:25,929:INFO:NumExpr defaulting to 8 threads.
+2024-07-13 03:00:26,246:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:00:28,453:INFO:Successfully scraped.
+2024-07-13 03:05:30,425:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:05:32,386:INFO:Successfully scraped.
+2024-07-13 03:05:32,456:ERROR:Error during applying exchange rates: [Errno 2] No such file or directory: 'exchange_rate.csv'
+2024-07-13 03:05:32,456:INFO:Failed to apply exchange rates.
+2024-07-13 03:08:09,007:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:08:10,480:INFO:Successfully scraped.
+2024-07-13 03:09:44,261:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:10:49,875:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:10:52,084:INFO:Successfully scraped.
+2024-07-13 03:12:22,714:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:12:24,547:INFO:Successfully scraped.
+2024-07-13 03:12:24,610:INFO:Exchange rates CSV 'exchange_rate.csv' not found.
+2024-07-13 03:12:24,610:INFO:Failed to apply exchange rates.
+2024-07-13 03:13:06,827:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:13:08,383:INFO:Successfully scraped.
+2024-07-13 03:13:08,427:INFO:Exchange rates CSV 'exchange_rate.csv' not found.
+2024-07-13 03:13:08,427:INFO:Failed to apply exchange rates.
+2024-07-13 03:13:26,800:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:13:29,162:INFO:Successfully scraped.
+2024-07-13 03:13:29,228:INFO:Exchange rates CSV 'exchange_rate.csv' not found.
+2024-07-13 03:13:29,228:INFO:Failed to apply exchange rates.
+2024-07-13 03:13:50,296:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:13:52,089:INFO:Successfully scraped.
+2024-07-13 03:13:52,167:INFO:Exchange rates CSV 'exchange_rate.csv' not found.
+2024-07-13 03:13:52,167:INFO:Failed to apply exchange rates.
+2024-07-13 03:15:20,218:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:15:44,183:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:18:49,687:INFO:Getting data from https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks...
+2024-07-13 03:18:52,965:INFO:Successfully scraped.
+2024-07-13 03:19:27,335:INFO:Data loaded to CSV file: transformed_data.csv
+2024-07-13 03:19:31,443:INFO:Data loaded to CSV file: transformed_data.csv
+2024-07-13 03:29:10,481:INFO:Executing Query_1: SELECT `Bank name` FROM transformed_data WHERE Rank > 5;
+2024-07-13 03:29:10,481:INFO:Executing Query_2: SELECT `Bank name`, COUNT(*) as BankCount FROM transformed_data;
+2024-07-13 03:29:10,481:INFO:Executing Query_3: SELECT `Bank name`, SUM(`Market cap (US$ billion)`) as TotalMarketCap FROM transformed_data GROUP BY Rank ORDER BY TotalMarketCap;
+2024-07-13 03:29:10,481:INFO:Executing Query_4: SELECT `Bank name`, `MC_INR_Billion` FROM transformed_data ORDER BY `MC_INR_Billion` LIMIT 5;
+2024-07-13 03:29:10,481:INFO:Queries executed successfully.
+2024-07-13 03:31:04,241:INFO:Plotting Query 1: Banks with Rank > 5
+2024-07-13 03:31:04,325:INFO:Plotting Query 2: Count of Banks
+2024-07-13 03:31:04,441:INFO:Plotting Query 3: Total Market Cap by Rank
+2024-07-13 03:31:04,541:INFO:Plotting Query 4: Top 5 Banks by Market Cap in INR
+2024-07-13 03:31:04,541:INFO:All visualizations completed successfully.
+2024-07-13 03:37:56,165:INFO:Plotting Query 1: Banks with Rank > 5
+2024-07-13 03:37:56,240:INFO:Plotting Query 2: Count of Banks
+2024-07-13 03:37:56,354:INFO:Plotting Query 3: Total Market Cap by Rank
+2024-07-13 03:37:56,455:INFO:Plotting Query 4: Top 5 Banks by Market Cap in INR
+2024-07-13 03:37:56,455:INFO:All visualizations completed successfully.
